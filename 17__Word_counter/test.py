@@ -33,7 +33,7 @@ class TestWordCounter(unittest.TestCase):
         self.assertEqual(word_counter(matrix, word), 3)
 
 
-    def word_counter_3(self):
+    def test_word_counter_3(self):
         word = "python"
         matrix = [
         ["r", "u", "b", "y"],
@@ -42,6 +42,18 @@ class TestWordCounter(unittest.TestCase):
         ["r", "u", "b", "y"],
         ]
         self.assertEqual(word_counter(matrix, word), 0)
+
+
+    def test_word_counter_4(self):
+        word = "ana"
+        matrix = [
+            ["i", "a", "n", "a"],
+            ["e", "a", "n", "h"],
+            ["i", "n", "n", "v"],
+            ["m", "v", "a", "a"],
+            ["a", "n", "a", "t"]
+        ]
+        self.assertEqual(word_counter(matrix, word), 3)
 
 
 
